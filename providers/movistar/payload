@@ -1,0 +1,20 @@
+POST /cwp/u-route/ucec/ces/sc/prodextend/search?t=1655951856095&menuId=&serviceNum=&channelType=&local=&beId= HTTP/1.1
+Host: mimovistar.movistar.co
+Content-Length: 331
+Sec-Ch-Ua: "-Not.A/Brand";v="8", "Chromium";v="102"
+Accept: application/json, text/plain, */*
+Content-Type: application/ueefire
+X-Requested-With: XMLHttpRequest
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+Sec-Ch-Ua-Platform: "Linux"
+Origin: https://mimovistar.movistar.co
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://mimovistar.movistar.co/cwp/baas/selfservice/html/offer/offeringlist.html?sceneCode=ESHOPGLOBAL&input=iphone%252012%2520pro%2520max&searchContent=iphone%252012%2520pro%2520max
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: close
+
+{"model":null,"params":{"searchOfferRequest":{"searchOffer":{"keyword":"iphone 12 pro max","searchConditionList":[],"scenarioCode":"offerScene","sortFields":[{"fieldCode":"invVolume.invVolume","sortOrder":"ASC"}],"offerCondition":{"offeringStatus":"R","salesCategoryList":[{}]}},"searchPage":{"firstResult":0,"maxResults":"200"}}}}

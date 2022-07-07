@@ -1,0 +1,21 @@
+POST /1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(4.5.1)%3B%20Browser%20(lite)%3B%20instantsearch.js%20(4.8.3)%3B%20JS%20Helper%20(3.2.2)&x-algolia-api-key=3d27121f3a7b3f34890f408160aa0f04&x-algolia-application-id=N6VYUYLE6W HTTP/1.1
+Host: n6vyuyle6w-dsn.algolia.net
+Content-Length: 1427
+Sec-Ch-Ua: "-Not.A/Brand";v="8", "Chromium";v="102"
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+Sec-Ch-Ua-Platform: "Linux"
+Content-Type: application/x-www-form-urlencoded
+Accept: */*
+Origin: https://www.tradeinn.com
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://www.tradeinn.com/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: close
+
+
+
+{"requests":[{"indexName":"products_search","params":"hitsPerPage=60&clickAnalytics=true&optionalFilters=%5B%22id_tienda%3A16%3Cscore%3D1%3E%22%5D&filters=%20%20NOT%20id_marca%3A5%20%20AND%20%20NOT%20id_marca%3A8%20%20AND%20%20NOT%20id_marca%3A10%20%20AND%20%20NOT%20id_marca%3A14%20%20AND%20%20NOT%20id_marca%3A16%20%20AND%20%20NOT%20id_marca%3A28%20%20AND%20%20NOT%20id_marca%3A78%20%20AND%20%20NOT%20id_marca%3A179%20%20AND%20%20NOT%20id_marca%3A183%20%20AND%20%20NOT%20id_marca%3A189%20%20AND%20%20NOT%20id_marca%3A215%20%20AND%20%20NOT%20id_marca%3A245%20%20AND%20%20NOT%20id_marca%3A537%20%20AND%20%20NOT%20id_marca%3A1010%20%20AND%20%20NOT%20id_marca%3A1127%20%20AND%20%20NOT%20id_marca%3A2999%20%20AND%20%20NOT%20id_marca%3A4505%20%20AND%20%20NOT%20id_marca%3A4929%20%20AND%20%20NOT%20id_marca%3A4976%20%20&restrictSearchableAttributes=%5B%22marca%22%2C%22familiasSubfamilias.spa%22%2C%22model.spa%22%2C%22hierarchicalAtributos.spa.lvl2%22%5D&query=_____________PAYLOAD_____________&maxValuesPerFacet=50&highlightPreTag=__ais-highlight__&highlightPostTag=__%2Fais-highlight__&page=0&facets=%5B%22marca%22%2C%22talla%22%2C%22hierarchicalAtributos.spa.lvl1%22%2C%22hierarchicalCategories.spa.lvl1%22%2C%22hierarchicalCategories.spa.lvl2%22%5D&tagFilters="}]}

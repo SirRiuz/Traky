@@ -1,0 +1,22 @@
+GET /ccstoreui/v1/products?totalResults=true&totalExpandedResults=true&catalogId=catalogMacCenterColombia&limit=60&offset=0&categoryId=general-iphone&includeChildren=true&storePriceListGroupId=PGmacCenterColombia&q=x_isActivated_CO%20eq%201 HTTP/2
+Host: www.mac-center.com
+Sec-Ch-Ua: "-Not.A/Brand";v="8", "Chromium";v="102"
+X-Ccviewport: lg
+X-Cc-Meteringmode: CC-NonMetered
+X-Ccvisitorid: 1070At5MUZb7Cedd_VO3zbp_AlOXive0OKFq1SdzR4y7lKE7E8F
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36
+Content-Type: application/json
+Accept: application/json, text/javascript, */*; q=0.01
+Sec-Ch-Ua-Mobile: ?0
+X-Requested-With: XMLHttpRequest
+X-Ccsite: siteUS
+X-Ccprofiletype: storefrontUI
+X-Ccvisitid: -76d220f8:181ba6362bb:5458-4094297861
+Sec-Ch-Ua-Platform: "Linux"
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://www.mac-center.com/category/general-iphone
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
