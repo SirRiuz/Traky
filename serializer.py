@@ -7,6 +7,6 @@ class BaseSerializer():
     data = []
     size = 0
     
-    def serializer(self) -> (None): ... 
+    def serializer(self) -> (list): ... 
     
     
