@@ -43,7 +43,7 @@ class BaseProvider:
                 headers = request_data[0]
                 response = requests.post(
                     headers=headers,
-                    timeout=8000,
+                    timeout=5000,
                     url=self.__url,
                     json=self.__get_params(),
                     verify=False
@@ -51,7 +51,7 @@ class BaseProvider:
             
             if self.__method == 'GET':
                 response = requests.get(
-                    timeout=8000,
+                    timeout=5000,
                     url=self.__get_search_params(),
                     verify=False
                 )
