@@ -9,6 +9,8 @@ from providers.exito.serializer import ExitoSerializer
 from providers.exito.settings import PROVIDER_URL
 
 
+
+
 class Exito(BaseProvider):
     
     
@@ -20,14 +22,17 @@ class Exito(BaseProvider):
             method='GET'
         )
         
-        
-    def get_data(self) -> dict:
+    def get_data(self) -> (dict):
         response_data = super().get_data()
-        serializer = ExitoSerializer(
-            response=json.loads(response_data['queryData'][0]['data']),
+        data = json.loads(
+            response_data['queryData'][0]['data']
+        )['productSearch']['products']
+        data = ExitoSerializer(
+            data=data,
             keyboard=self.__keyboard
-        )
-        return serializer.data
+        ).serialize()        
+        
+        return data
         
         
         

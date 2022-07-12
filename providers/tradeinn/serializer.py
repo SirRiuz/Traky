@@ -2,38 +2,29 @@
 
 
 # Libs
-import json
+from models import BaseProductModel
 from serializer import BaseSerializer
+
+
+
 
 
 
 class TradeinnSerializer(BaseSerializer):
     
-    
-    def __init__(self,**kwargs) -> None:
-        self.__response = kwargs.get('response',[])
-        self.__keyboard = kwargs.get('keyboard','')
-    
-        data = self.serializer()
-        self.data = data
-        self.provider_name = 'Tradeinn'
-        self.size = len(data)
-    
-    def serializer(self) -> (list):
-        
-        data = []
-        for item in self.__response['results'][0]['hits']:
-            name = item['model']['spa'].lower()
-            item_data = {
-                'id':item['objectID'],
-                'name':name,
-                'preview':item['src_photo'],
-                'price':int(
-                    item['precio_str']['precio_43'].replace('COL$','')),
-                'origin':item['link_product']
-            }
+    def __init__(self,**kwargs):
+        super().__init__(
+            **kwargs,
+            model=self.Model
+        )
             
-            if name.find(self.__keyboard) > 0:
-                data.append(item_data)
+    class Model(BaseProductModel):
+        id:str = 'objectID'
+        name:str = 'model:spa'
+        preview:str = 'src_photo'
+        origin:str = 'link_product'
+        price:float = 'precio_str:precio_43'
 
-        return data
+
+
+

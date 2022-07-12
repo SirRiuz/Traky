@@ -1,8 +1,7 @@
 
 
 
-
-
+# Libs
 from providers.falabella.settings import PROVIDER_URL
 from .serializer import FalabellaSerializer
 from provider import BaseProvider
@@ -19,17 +18,18 @@ class Falabella(BaseProvider):
             url=PROVIDER_URL,
             method='GET'
         )
-        self.serailizer_class = FalabellaSerializer
 
     
     def get_data(self) -> (dict):
         response_data = super().get_data()
+        data = response_data['data'].get('results',[])      
         serializer = FalabellaSerializer(
-            response=response_data,
+            data=data,
             keyboard=self.__keyboard
-        )
-        return serializer.data
-    
-    
-    
-    
+        ).serialize()
+        
+        return serializer
+
+
+
+

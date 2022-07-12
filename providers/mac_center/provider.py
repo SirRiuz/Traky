@@ -7,7 +7,7 @@ from providers.mac_center.settings import PROVIDER_URL
 
 
 
-class CenterProvider(BaseProvider):
+class MacCenter(BaseProvider):
     
     
     def __init__(self, **kwargs) -> None:
@@ -19,11 +19,14 @@ class CenterProvider(BaseProvider):
         )
         
         
-    def get_data(self) -> dict:
+    def get_data(self) -> (dict):
         response_data = super().get_data()['items']
-        serailizer = CenterSerailizer(
-            response=response_data,
+        data = CenterSerailizer(
+            data=response_data,
             keyboard=self.__keyboard
-        )
-        return serailizer.data
+        ).serialize()
         
+        return data
+
+
+
