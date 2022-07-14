@@ -25,7 +25,7 @@ class Tradeinn(BaseProvider):
 
     def get_data(self) -> (dict):
         response_data = super().get_data()
-        data = response_data['results'][0]['hits']
+        data = response_data['results'][0]['hits'] if response_data else []
         result = TradeinnSerializer(
             data=data,
             keyboard=self.__keyboard    
@@ -33,11 +33,6 @@ class Tradeinn(BaseProvider):
         
         
         return result
-        # return serializer.data
 
-
-
-
-Tradeinn(keyboard='redmi note'.lower()).get_data()
 
 

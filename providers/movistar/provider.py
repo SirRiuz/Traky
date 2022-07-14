@@ -3,6 +3,7 @@
 
 
 # Settings
+import json
 from .settings import (BODY,PAYLOAD_DIR,PROVIDER_URL)
 
 # Libs
@@ -38,7 +39,6 @@ class Movistar(BaseProvider):
 
 
 
-#result = Movistar(keyboard='Samsung galaxy'.lower()).get_data()
 
 
 

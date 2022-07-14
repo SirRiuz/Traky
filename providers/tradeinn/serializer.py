@@ -7,9 +7,6 @@ from serializer import BaseSerializer
 
 
 
-
-
-
 class TradeinnSerializer(BaseSerializer):
     
     def __init__(self,**kwargs):
@@ -23,7 +20,7 @@ class TradeinnSerializer(BaseSerializer):
         name:str = 'model:spa'
         preview:str = 'src_photo'
         origin:str = 'link_product'
-        price:float = 'precio_str:precio_43'
+        price:float = 'precio_str:precio_43#COL$'
 
 
 

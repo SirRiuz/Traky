@@ -22,7 +22,7 @@ class Falabella(BaseProvider):
     
     def get_data(self) -> (dict):
         response_data = super().get_data()
-        data = response_data['data'].get('results',[])      
+        data = response_data['data'].get('results',[])
         serializer = FalabellaSerializer(
             data=data,
             keyboard=self.__keyboard

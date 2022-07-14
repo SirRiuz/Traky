@@ -22,8 +22,8 @@ class MovistarSerializer(BaseSerializer):
     class Model(BaseProductModel):
         id:str = 'offeringId'
         name:str = 'offeringName'
-        preview:str = f'{PROVIDER_BASE_URL} + picUrl'
-        origin:str = f'{ORIGIN_BASE_URL} + offeringId'
+        preview:str = f'{PROVIDER_BASE_URL} + :picUrl'
+        origin:str = f'{ORIGIN_BASE_URL} + :offeringId'
         price:float = 'monthlyFee'
 
 

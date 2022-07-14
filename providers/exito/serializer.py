@@ -19,11 +19,8 @@ class ExitoSerializer(BaseSerializer):
         
         id:str = 'productId'
         name:str = 'productName'
-        origin:str = 'link'
-        
-        price_discount:float = 'priceRange:sellingPrice:lowPrice'
+        origin:str = 'link'        
         price:float = 'priceRange:listPrice:lowPrice'
-        
         preview:str = 'items:0:images:0:imageUrl'
 
 

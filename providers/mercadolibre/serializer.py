@@ -20,7 +20,6 @@ class MeliSerializer(BaseSerializer):
         name:str = 'title'
         preview:str = 'pictures:stack:retina'
         price:float = 'price:amount'
-        price_discount:float = 'price:original_price'
         origin:str = 'permalink'
         
         

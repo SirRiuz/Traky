@@ -20,11 +20,10 @@ class CenterSerailizer(BaseSerializer):
         
     class Model(BaseProductModel):
         id:str = 'seoUrlSlugDerived'
-        name:str = 'seoUrlSlugDerived'
-        preview:str = f'{PROVIDER_BASE_URL} + primaryMediumImageURL'
-        origin:str = f'{PROVIDER_BASE_URL} + route'
-        price:float = 'childSKUs:0:salePrice'
-        price_discount = 'childSKUs:0:listPrice'
+        name:str = 'displayName'
+        preview:str = f'{PROVIDER_BASE_URL} + :primaryMediumImageURL'
+        origin:str = f'{PROVIDER_BASE_URL} + :route'
+        price:float = 'childSKUs:0:salePrice > childSKUs:0:listPrice'
 
 
 

@@ -22,8 +22,7 @@ class MercadoLibre(BaseProvider):
     
     def get_data(self) -> (dict):
         response_data = super().get_data()
-        response_data = response_data['results']
-        
+        response_data = response_data['results']        
         data = MeliSerializer(
             data=response_data,
             keyboard=self.__keyboard
