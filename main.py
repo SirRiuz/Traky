@@ -14,6 +14,6 @@ from providers.linio.provider import *
 
 
 
-TestConsumer().search('redmi note 9')
+TestConsumer().search('audifonos redmi airdots')
 
 

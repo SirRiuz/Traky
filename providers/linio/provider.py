@@ -2,11 +2,9 @@
 
 
 # Libs
-import json
-from textwrap import indent
 from provider import BaseProvider
 from providers.linio.serializer import LinioSerializer
-from providers.linio.settings import PAYLOAD_DIR
+from providers.linio.settings import PAYLOAD_DIR,BODY,PROVIDER_URL
 
 
 
@@ -18,23 +16,16 @@ class Linio(BaseProvider):
         super().__init__(
             **kwargs,
             payload=PAYLOAD_DIR,
-            url='https://api.linio.com/mapi/search',
+            url=PROVIDER_URL,
             method='POST',
-            body='''
-            {
-  "q": "query_keyboard",
-  "searchResults": false,
-  "sortBy": "relevance",
-  "page": 1
-}
-            '''
+            body=BODY
         )
 
     
     def get_data(self) -> (dict):
         print('Get daa')
         response_data = super().get_data()
-        data = response_data.get('searchResult',[]) #['searchResult']['original']
+        data = response_data.get('searchResult',[])
         if data:
             data = data['original']['products']
         
@@ -44,12 +35,7 @@ class Linio(BaseProvider):
         ).serialize()
         
         return serielizer
-        #open('data.json','w').write(json.dumps(serielizer,indent=2))
-        
-        
 
-#Linio(keyboard='xbox series x').get_data()
-        
-
-
+  
+  
   
