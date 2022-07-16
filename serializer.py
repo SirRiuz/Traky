@@ -21,12 +21,21 @@ class BaseSerializer:
         sekeer = Sekeer()
         
         for item in self.data:
+            
+            origin = sekeer.find(item,self.__model.origin)
+            origin = origin.replace('->',':') if origin and type(origin) == str else None
+            
+            
+            preview = sekeer.find(item,self.__model.preview)
+            preview = preview.replace('->',':') if preview and type(preview) == str else None
+            
             item_data = {
                 'id':sekeer.find(item,self.__model.id),
                 'name':sekeer.find(item,self.__model.name),
                 'price':sekeer.find(item,self.__model.price),
-                'origin':sekeer.find(item,self.__model.origin).replace('->',':'),
-                'preview':sekeer.find(item,self.__model.preview).replace('->',':')
+                'origin':origin,
+                'preview':preview,
+                'free_shipping':sekeer.find(item,self.__model.free_shipping)
             }
             
             

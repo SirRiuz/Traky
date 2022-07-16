@@ -1,0 +1,19 @@
+accept: application/json
+accept-encoding: gzip
+connection: Keep-Alive
+content-length: 72
+content-type: application/json; charset=UTF-8
+dy-jsession: wfjqig3m7orkod9bdjjrq3084qdm6ffn
+dyid-server: -6962564828983678174
+host: api.linio.com
+user-agent: linio_android
+x-accept-features: financed_payments, hosted_payments, fpay_payments_v2, paypal_rest_api, dy_hybrid_recommendations, catalog_redirect, split_payment, pagoefectivo_rest_api, one_time_password, fpay_debit, salesforce_support_contact_api
+x-app-ad-tracking-enabled: true
+x-app-build: 243
+x-app-version: 6.1.4
+x-auth-store: co
+x-device-id: 00000000-0000-0000-0000-000000000000
+x-linio-id: b02506ed-62cc-4817-aacc-69f2d9eb3b78
+x-os-version: 11
+x-request-id: Android-00000000-0000-0000-0000-000000000000-1657830245141
+x-version: 2

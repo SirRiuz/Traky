@@ -2,18 +2,18 @@
 
 
 
-import time
+#from providers.linio.provider import *
+
+
+from consumers.testing import *
 from consumers.smartphone import *
-
-# #from providers.exito.provider import Exito
-
-start = time.perf_counter()
-SmartPhoneConsumer().search(keyboard='redmi note 9'.lower())
-end = time.perf_counter()
+from providers.linio.provider import *
 
 
 
-print(end - start)
 
+
+
+TestConsumer().search('redmi note 9')
 
 
